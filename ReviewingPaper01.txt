@@ -1,0 +1,99 @@
+Below is the completed report in the same style and format as the provided excerpt.
+
+––––––––––––––––––––––––––––––––––––––––––
+Review Report  
+Dated: 20th March 2025  
+Paper: Application of Artificial Intelligence in Computational Fluid Dynamics
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 1: Introduction]
+
+• CFD = study of flow/transport of mass, heat, and momentum  
+• Three AI–CFD coupling models: data‐driven model, physical model, and hybrid model  
+
+• The paper discusses applications of AI in CFD divided into five parts:  
+ 1. Optimization of aerodynamic models  
+ 2. Optimization of turbulence models  
+ 3. Simulation and prediction of complex flow fields  
+ 4. Modeling and verification of heat transfer  
+ 5. Modeling and verification of mass transfer
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 2: Fundamentals of Artificial Intelligence]  
+(Skipped)
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 3: Application of AI in Aerodynamics Models]
+
+Aim: Aircraft design and optimization  
+ i. Designing the solid parts and equipment involved in aerodynamics (e.g., airfoils, turbines, blowers)  
+ ii. Optimization of parameters under different Mach numbers and pressures
+
+Traditional methods include wind-tunnel tests and CFD simulation.  
+Historical optimization (1974): Hicks et al. initiated airfoil optimization.  
+
+Two AI methods for optimizing airfoil parameters:  
+ • SBO (Surrogate-Based Optimization) – builds models entirely from equations and CFD data  
+ • SAO (Surrogate-Aided Optimization) – integrates partial CFD equations to tackle complex 3D problems  
+
+Author notes: The combination of ML with traditional algorithms (e.g., GA with ANN and SVM) is key for future research.
+
+ 3.1 Aerodynamics Optimization:  
+  • SBO has been widely applied when a large amount of CFD data is available. Techniques such as GA–ANN coupling replace full CFD evaluations with fast neural network predictions.  
+  • In SBO, genetic algorithms optimize mesh or geometry data, and ANN establishes an input–output relationship between the optimized design and CFD results—reducing computation time dramatically.  
+  • SAO uses CFD partially to calibrate surrogate models, ensuring both efficiency and accuracy when data are limited or when handling 3-D unsteady problems.  
+  • Several studies (e.g., using GA–ANN and GA–MLP approaches) have demonstrated that these AI-assisted methods can achieve results comparable to traditional CFD but in a fraction of the time.
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 4: Application of AI in Turbulence Modeling]
+
+• Turbulence modeling is inherently complex, and traditional methods (e.g., RANS, LES, DNS) often face challenges due to closure issues and high computation costs.  
+• Two main approaches with AI:  
+ – Embedding ML algorithms into existing turbulence models to optimize empirical parameters (e.g., fine-tuning the source term in Spalart-Allmaras models)  
+ – Employing data-driven techniques to reconstruct hidden relationships (e.g., predicting Reynolds stress components with kernel regression or neural networks)  
+• Recent studies have successfully used supervised learning (ANN, RF) to enhance turbulence model predictions.  
+• These hybrid methods not only improve the accuracy of CFD predictions but also reduce uncertainties inherent in turbulence closure models.
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 5: Application of AI in Specific Flows]
+
+• Specific flow problems – such as flows past a cylinder, boundary layer flows, and multiphase flows – possess unique challenges including spatiotemporal instabilities and complex interface dynamics.  
+• For flows past a cylinder, auto-encoder models that incorporate physical attributes have been used to capture transient behavior and reconstruct high-dimensional flow fields from CFD and experimental data.  
+• In boundary layer studies, coupling AI (e.g., DE–MLP models) with traditional methods has improved predictions of flow separation, vortex formation, and Reynolds stress distributions.  
+• For multiphase flows (both without and with solid particles), AI-driven models (e.g., data-driven MLP or RBF networks) have provided accurate estimates of phase concentrations, interface dynamics, and drag coefficients, even when the underlying microphysical mechanisms remain complex.
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 6: Application of AI in Heat Transfer]
+
+• Heat transfer processes are critical in energy systems, metallurgy, and chemical engineering.  
+• Conventional experiments and CFD simulations are often limited by high cost and complexity when dealing with non-linear phenomena.  
+• AI offers a promising alternative by:  
+ – Developing physical, hybrid, and data-driven models to predict key parameters such as the heat transfer coefficient, thermal efficiency, and temperature differentials.  
+ – Optimizing design parameters in systems like nanofluids and solar heat transfer equipment.  
+• Examples include:  
+ – ANN models accurately predicting nanofluid viscosity and thermal conductivity with minimal error.  
+ – Feedforward neural networks optimizing the performance of solar collectors and heaters, where the error in thermal efficiency predictions has been reduced to as low as 2%.
+
+––––––––––––––––––––––––––––––––––––––––––
+[Section 7: Application of AI in Mass Transfer]
+
+• Mass transfer is fundamental to unit operations such as absorption, distillation, and extraction.  
+• Similar to heat transfer, challenges arise from non-linear behavior and limited experimental data.  
+• AI techniques (ANN, LSTM, DNN, and RF) have been successfully applied to:  
+ – Predict mass transfer coefficients with high accuracy (errors reduced from 20–30% with traditional methods down to around 5% using ANN).  
+ – Calculate concentration distributions and simulate dynamic mass transfer processes by building comprehensive databases from both experiments and CFD simulations.  
+• These models have demonstrated faster computation and improved reliability, paving the way for real-time process optimization in chemical engineering operations.
+
+––––––––––––––––––––––––––––––––––––––––––
+[Conclusions and Future Perspectives]
+
+• The reviewed paper provides a comprehensive survey on the integration of AI with CFD, highlighting advancements across aerodynamics, turbulence, specific flows, heat transfer, and mass transfer.  
+• Hybrid and data-driven models have significantly reduced computation time while maintaining—or even enhancing—prediction accuracy compared to traditional methods.  
+• Future research should focus on:  
+ – Deepening the integration between physical insights and AI algorithms to overcome the “black-box” nature of data-driven models.  
+ – Expanding high-fidelity databases to further improve training for both steady and unsteady flow phenomena.  
+ – Addressing overfitting and enhancing model generalization for complex industrial applications.  
+• The combination of AI with conventional CFD promises to open new avenues for designing efficient and robust systems in aerospace, chemical processing, and energy conversion.
+
+––––––––––––––––––––––––––––––––––––––––––
+End of Report
